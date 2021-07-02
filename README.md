@@ -63,7 +63,7 @@ docker restart CONTAINER ID
 # 进入节点中进行转账,
 # docker exec -it 88db9ea843ad /bin/sh
 # java -cp grey.jar MainApp
-# 退出容器输入 exit(只是退出容器环境。节点还是会正常运行)
+# 退出容器输入 exit回车 (只是退出容器环境。节点还是会正常运行)
 docker exec -it CONTAINER ID /bin/sh
 
 ```
