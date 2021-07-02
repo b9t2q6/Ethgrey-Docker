@@ -1,4 +1,7 @@
 # Ethgrey-Docker
+使用Docker 单台Linux服务器 多开Grey节点
+
+QQ交流群:602588593 
 ## 安装Docker
 Ubuntu
 ```
@@ -49,8 +52,17 @@ docker logs  ethgrey1
 docker ps
 # 关闭Docker中的节点
 # 根据docker ps中得到 CONTAINER ID
-# docker stop f48fcb969a42
+# docker stop 88db9ea843ad
 docker stop CONTAINER ID
-# 启动DOcker中暂停的节点
+# 启动Docker中暂停的节点
 docker start CONTAINER ID
+# 重启Docker中的节点
+# docker restart 88db9ea843ad
+docker restart CONTAINER ID
+# 进入节点进行转账
+# docker exec -it 88db9ea843ad /bin/sh
+# java -cp grey.jar MainApp
+# 退出容器输入 exit
+docker exec -it CONTAINER ID /bin/sh
+
 ```
